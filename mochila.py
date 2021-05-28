@@ -14,10 +14,12 @@ class Mochila:
             print("Você tem os seguintes itens na mochila:")
             for _item in self.mochila:
                 print(_item, end="   ")
+                print()
     
     
     def adicionar(self, item):
         self.mochila.append(item)
+        print(f'Você adicionou {item} na mochila.')
 
     
     def retirar(self, item):

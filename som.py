@@ -3,6 +3,7 @@ import winsound
 
 faixas = {
     'beep': 'button-32.wav',
+    'badalada': 'badalada.wav'
 }
 
 

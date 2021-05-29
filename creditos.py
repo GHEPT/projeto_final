@@ -1,4 +1,4 @@
-import time
+from time import sleep
 from som import som
 
 def creditos():
@@ -9,9 +9,11 @@ def creditos():
     }
 
     for i in credenciais.items():
-        print(f'{i[0]} por {i[1]}') 
-        som('beep')
-        time.sleep(1)
-
-    return credenciais.items
-
+        #print(f'{i[0]} por {i[1]}') 
+        for letra in i[0]:
+            print(letra, end="")
+            sleep(0.5)
+        for letra in i[1]:
+            print(letra, end="")
+            sleep(0.5)
+creditos()

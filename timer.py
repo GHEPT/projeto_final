@@ -5,7 +5,7 @@ class Timer:
         self.days = 1
 
 
-    def add_time(self, time_passed):
+    def adicionar_tempo(self, time_passed):
         self.minutes += time_passed #SEMPRE EM MINUTOS! MUITO IMPORTANTE.
         while self.minutes >=60:
             self.hours += 1
@@ -15,7 +15,7 @@ class Timer:
                 self.hours -= 24
 
     
-    def clock(self):
+    def __str__(self):
         return f'São {self.hours} hora(s) e {self.minutes} minuto(s) do dia {self.days}.'
 
 

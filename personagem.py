@@ -12,6 +12,8 @@ class Personagem:
         self.score += pontos
         print(f'Você pontuou. Seu SCORE agora é: {self.score}')
 
+        
+
 
 
     

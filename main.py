@@ -4,6 +4,7 @@ from personagem import Personagem
 from som import som
 from timer import Timer
 import sys
+from creditos import creditos
 
 mochila = Mochila()
 relogio = Timer(8)
@@ -63,6 +64,7 @@ while True:
         item_da_mochila = input('Digite o nome do item que deseja consumir: ')
         consumir(item_da_mochila)
     elif escolha == 'Sair':
+        creditos()
         sys.exit(0)
     else:
         print('Opção inexistente, tente outra vez.')

@@ -115,92 +115,77 @@ if __name__ == '__main__':
             relogio.adicionar_tempo(180)
             personagem.pontuar(50)
             personagem.mudar_stamina(-25)
-            print(personagem)
+
         elif opcao == 2:
             relogio.adicionar_tempo(20)
             personagem.pontuar(10)
             personagem.mudar_stamina(-5)
-            print(personagem)
+            
         elif opcao == 3:
             relogio.adicionar_tempo(60)
             personagem.pontuar(15)
             personagem.mudar_stamina(-5)
-            print(personagem)   
         elif opcao == 4:
             relogio.adicionar_tempo(120)
             personagem.pontuar(30)
             personagem.mudar_stamina(-15)  
-            print(personagem)     
         elif opcao == 5:
             relogio.adicionar_tempo(30)
             personagem.pontuar(10)
             personagem.mudar_stamina(-5) 
-            print(personagem)  
         elif opcao == 6:
             relogio.adicionar_tempo(120)
             personagem.pontuar(30)
             personagem.mudar_stamina(-10) 
-            print(personagem)  
         elif opcao == 7:
             relogio.adicionar_tempo(60)
             personagem.pontuar(20)
             personagem.mudar_stamina(-10)
-            print(personagem)   
         elif opcao == 8:
             relogio.adicionar_tempo(60)
             personagem.pontuar(30)
             personagem.mudar_stamina(-15)
-            print(personagem)   
         elif opcao == 9:
             relogio.adicionar_tempo(30)
             personagem.pontuar(10)
             personagem.mudar_stamina(-5) 
-            print(personagem)
         elif opcao == 10:
             relogio.adicionar_tempo(20)
             personagem.mudar_stamina(-5)
             personagem.pontuar(10)
-            print(personagem)
 
         elif opcao == 11:
             relogio.adicionar_tempo(15)
             personagem.mudar_stamina(-5)
             personagem.pontuar(10)
-            print(personagem)
         
         elif opcao == 12:
             relogio.adicionar_tempo(60)
             personagem.mudar_stamina(-15)
             personagem.pontuar(20)
-            print(personagem)
         
         elif opcao == 13:
             relogio.adicionar_tempo(15)
             personagem.mudar_stamina(-5)
             personagem.pontuar(5)
-            print(personagem)
         
         elif opcao == 14:
             relogio.adicionar_tempo(30)
             personagem.mudar_stamina(-10)
             personagem.pontuar(10)
-            print(personagem)
         
         elif opcao == 15:
             relogio.adicionar_tempo(120)
             personagem.mudar_stamina(-15)
-            print(personagem)
         
         elif opcao == 16:
             relogio.adicionar_tempo(120)
             personagem.mudar_stamina(-20)
-            print(personagem)
 
         elif opcao == 16:
             relogio.adicionar_tempo(120)
             personagem.stamina(-20)
-            print(personagem)
-            
+                        
         # elif opcao == 17:
         #     if 1 <= descanso <= 15:
         #         relogio.adicionar_tempo() += descanso
@@ -240,6 +225,8 @@ if __name__ == '__main__':
             break
         else:
             print('Opção incorreta. Digite um número inteiro entre 0 e 18: ')
+        print(personagem)
+        print(relogio)
 
 #fim assim eu digito ao mesmo tempo
 

@@ -3,6 +3,7 @@ class Personagem:
         self.stamina = 100
         self.score = 0
         self.nome = input('Digite o nome do personagem: ')
+        self.arrumada = False
 
     def dormir(self):
         self.stamina = 100

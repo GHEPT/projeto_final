@@ -9,6 +9,7 @@ from time import sleep
 from falas import *
 
 sonhos = 0
+enteada = 0
 mochila = Mochila()
 relogio = Timer(8)
 #personagem = Personagem()
@@ -26,7 +27,7 @@ def consumir(item_da_mochila): #LISTAR OS POSSÍVEIS ITENS DA MOCHILA AQUI.
     if item_da_mochila == 'Pêssego':
         print(f'A poção mágica favorita da fada madrinha é a de Pêssego! Ela amou e fez pra você o vestido mais lindo do Reino')
     else:
-        print('Esse item não existe na mochila.')
+        pass
 
 def rng(): #Define um número aleatório entre 1 e 10. Sorte é variável global para uso em condições.
     global sorte
@@ -81,16 +82,17 @@ if __name__ == '__main__':
     for i in range(3):
         soletrar(13, 14)
         opcao = input('Digite sua escolha: ')
+        
         if opcao == '1':
             rng()
-            if sorte >= 8:
+            if sorte >= 7:
                 soletrar(14, 15)
                 personagem.mudar_stamina(-10)
                 personagem.pontuar(30)
                 relogio.adicionar_tempo(120)
                 print(personagem)
                 print(relogio)
-            elif sorte > 4:
+            elif sorte > 3:
                 soletrar(15, 16)
                 personagem.mudar_stamina(-20)
                 personagem.pontuar(30)
@@ -104,7 +106,7 @@ if __name__ == '__main__':
                 relogio.adicionar_tempo(240)
                 print(personagem)
                 print(relogio)
-        if opcao == '2':
+        elif opcao == '2':
             sonhos += 1
             if sonhos == 3:
                 soletrar(19, 20)
@@ -128,69 +130,79 @@ if __name__ == '__main__':
                 relogio.adicionar_tempo(100)
                 print(personagem)
                 print(relogio)
-        if opcao == '3':
-            soletrar(20, 21)
-        if opcao == '4':
-            soletrar(20, 21)
-        if opcao == '5':
-            soletrar(20, 21)
+        elif opcao == '3':
+            enteada += 1
+            if enteada == 1:
+                soletrar(20, 21)
+                personagem.pontuar(50)
+                relogio.adicionar_tempo(120)
+                print(personagem)
+                print(relogio)
+            else:
+                soletrar(69, 70)
+                personagem.pontuar(-10)
+                relogio.adicionar_tempo(60)
+                print(personagem)
+                print(relogio)
+        else:
+            soletrar(70, 71)
     #novas partes do marcos
     #print(relogio)
     
-    while personagem.stamina > 15: 
-        soletrar(60, 61)
-        if 'papel' in mochila.mochila:
+
+    soletrar(59, 61)
+    while True:
+        if 'Papel' in mochila.mochila:
             soletrar(61, 62)
         if 'Frasco Vermelho' in mochila.mochila:
-            soletrar(62, 63)        
-        if personagem.stamina < 40:
-            soletrar(63, 64)   
-        while opcao != 8:
-            if opcao == '1':
-                mochila.adicionar('Água')
-                personagem.pontuar(30)
-                personagem.mudar_stamina(-10)
-                relogio.adicionar_tempo(30)
-                print(relogio)
-                print(personagem)
-            elif opcao =='4':
-                if 'Água' not in mochila.mochila:
-                    soletrar(65, 66)
-                    relogio.adicionar_tempo(30)
-                    print(relogio)
-                    print(personagem)
-                else: 
-                    soletrar(66, 67)
-                    personagem.pontuar(30)
-                    print(relogio)
-                    print(personagem)
-            elif opcao == '5':
-                if 'Água' not in mochila.mochila:
-                    soletrar(65, 66)
-                    relogio.adicionar_tempo(30)
-                    print(relogio)
-                    print(personagem)
-                else:
-                    soletrar(67, 68)
-                    personagem.pontuar(30)
-                    print(relogio)
-                    print(personagem)
-            elif opcao == '6':
-                consumir('Papel')
-                principe.amar(25)
-                relogio.adicionar_tempo(60)
-                print(relogio)
-            elif opcao == '7':
-                consumir('Frasco Vermelho')
-                principe.amar(-10)
-                relogio.adicionar_tempo(120)
-                print(relogio)
-            elif opcao == '2':
-                print('Varreu')
-            elif opcao == '3':
-                print('Varreu')      
-            else:
-                opcao == '8'          
+            soletrar(62, 63)         
+        opcao = input('Digite a opção desejada: ')
+        if opcao == '1':
+            soletrar(64, 65)#armário
+            personagem.pecas += 1
+            relogio.adicionar_tempo(50)
+            personagem.pontuar(10)
+            print(relogio)
+            print(personagem)
+        elif opcao =='2':
+            soletrar(65, 66)#farda
+            personagem.pecas += 1
+            relogio.adicionar_tempo(70)
+            personagem.pontuar(20)
+            print(relogio)
+            print(personagem)
+        elif opcao == '3':
+            soletrar(66, 67)#velhas
+            relogio.adicionar_tempo(30)
+            personagem.pontuar(-10)
+            print(relogio)
+            print(personagem)
+        elif opcao == '4':
+            soletrar(67, 68)#roubadas
+            relogio.adicionar_tempo(40)
+            personagem.pontuar(-10)
+            print(relogio)
+            print(personagem)
+        elif opcao == '5':
+            consumir('Papel')
+            principe.amar(25)
+            relogio.adicionar_tempo(60)
+            print(relogio)
+            print(personagem)
+        elif opcao == '6':
+            consumir('Frasco Vermelho')
+            principe.amar(-10)
+            relogio.adicionar_tempo(120)
+            print(relogio)
+            print(personagem)           
+        else:
+            opcao == '7'
+            personagem.dormir()
+            relogio.adicionar_tempo(240)
+            break
+        if personagem.pecas == 2:
+            soletrar(71, 72)
+            break
     
     
     

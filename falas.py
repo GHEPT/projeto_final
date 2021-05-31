@@ -27,12 +27,12 @@ falas = [
     f'Passar horas com as enteadas valeu a pena: {personagem.nome} descobriu que haverá um baile com o príncipe.',#20
     f'SEGUNDO DIA\n\nAs fortes batidas na porta fazem {personagem.nome} acordar assustada. É a Madrasta fazendo novas exigências para o dia antes de sair de casa.',#21
     f'''  
-O número de tarefas aumentam. É necessário arrumar e limpar a casa para a festa que a Madrasta dará as 21:00.\nAlém disso, {personagem.nome} ainda precisa fazer os retoques finais em seu vestido para o baile.\n\nO que deseja fazer?
+O número de tarefas aumentam. É necessário arrumar e limpar a casa para a festa que a Madrasta dará as 19:00.\nAlém disso, {personagem.nome} ainda precisa fazer os retoques finais em seu vestido para o baile.\n\nO que deseja fazer?
 [ 1 ] Aproveita que a madrasta e as primas sairam para começar os retoques finais no vestido, deixando as tarefas para depois.
 [ 2 ] Conhecendo a madrasta que tem e com o desejo de ganhar a sua simpatia, corre para fazer o que pediu e deixa o vestido para depois.
 ''',#22
     f'Oh, que maravilha! Com a ajuda dos pequenos animais que tem como amigos os retoques finais ficaram ótimos. Ainda não é o ideal para um baile, mas é um ótimo começo. \nEntretanto, {personagem.nome} se distraiu tanto que não viu a hora passar, agora tem menos tempo para fazer tudo!',#23
-    f'''É hora de focar nas atividades da casa.\n\nO que gostaria de fazer?
+    f'''\nO que gostaria de fazer?
 [ 1 ] Varrer a casa e limpar os móveis
 [ 2 ] Lavar as louças
 [ 3 ] Preparar as refeições para servir os convidados
@@ -46,7 +46,7 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
     f'A fome era maior do que poderia aguentar e uma pausa era necessária. Ela deve torcer para isso não interferir no resultado final.',#29
     f'Mesa finalizada! Para {personagem.nome} parece terrível, mas é o jeito estranho como a madrasta gosta que fique. Tudo para agradá-la, certo?',#30
     f'Ela chegou! Não é o cenário perfeito, mas pelo menos não está um completo desastre. O serviço agora é na festa, assim que acabar o descanso merecido chegará.',#31
-    f'A madrasta chegou enquanto {personagem.nome} ainda fazia as tarefas, isso é um desastre! Os convidados chegaram enquanto ela organizava e pontuação dela caiu.',#32
+    f'A madrasta chegou enquanto {personagem.nome} ainda fazia as tarefas, isso é um desastre! Os convidados chegaram enquanto ela organizava e a pontuação dela caiu.',#32
     f'''\n\nO que gostaria de fazer?
 [ 1 ] Varrer a casa e limpar os móveis
 [ 2 ] Lavar as louças
@@ -62,9 +62,9 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
     f'A fome de {personagem.nome} era maior do que poderia aguentar e uma pausa era necessária.',#38
     f'Mesa finalizada! Para {personagem.nome} parece terrível, mas é o jeito como a Madrasta gosta que fique. Tudo para agradá-la, certo?',#39
     f'Oh, que maravilha! Com a ajuda dos pequenos animais que tem como amigos os retoques finais ficaram ótimos. Ainda não é o ideal para um baile, mas é um ótimo começo.',#40
-    f'A Madrasta chegou! Não é o cenário perfeito, mas pelo menos não está um completo desastre. O descanso merecido chegou.\nEste é o final do segundo dia. {personagem.nome} tem um vestido para o baile.',#41
-    f'A Madrasta chegou enquanto {personagem.nome} ainda fazia as tarefas, isso é um desastre! Os convidados chegaram enquanto {personagem.nome} organizava e sua pontuação com ela caiu.\nEste é o final do segundo dia. {personagem.nome} tem um vestido para o baile.',#42
-    f'A madrasta diz que {personagem.nome} não poderá ir ao baile e rasga o seu vestido.',#43
+    f'A Madrasta chegou! Não é o cenário perfeito, mas pelo menos não está um completo desastre. O descanso merecido chegou.\nEste é o FIM DO SEGUNDO DIA. {personagem.nome} tem um vestido para o baile.',#41
+    f'A Madrasta chegou enquanto {personagem.nome} ainda fazia as tarefas, isso é um desastre! Os convidados chegaram enquanto {personagem.nome} organizava e sua pontuação com ela caiu.\nEste é o FIM DO SEGUNDO DIA!.\n{personagem.nome} tem um vestido para o baile.',#42
+    f'TERCEIRO DIA\n\nA madrasta diz que {personagem.nome} não poderá ir ao baile e rasga o seu vestido.',#43
     f'Todos da casa foram e {personagem.nome} ficou sozinha.',#44
     f'Triste, {personagem.nome} chorou muito e sua STAMINA é 0.',#45
     f'{personagem.nome} precisa sair dessa fazendo o que gosta para ter STAMINA suficiente para ir ao Baile.',#46
@@ -95,7 +95,8 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
     f'Opção Incorreta. Pare de perder tempo...',#70
     f'SHOW! {personagem.nome} encontrou todas as peças a tempo.\nUm Vestido Rudimentar foi adicionado à mochila.\nEste é o FIM DO PRIMEIRO DIA!\n',#71
     f'ENREDO\n{personagem.nome} é uma jovem muito bela que se tornou serviçal de sua madrasta malvada desde que seu pai morreu.\nSua chance de se tornar livre está em conseguir ir ao baile que o Rei realizará para escolher a esposa para seu filho.',#72
-    '\nPara isso, ela deve realizar algumas tarefas, conquistando a simpatia da madrasta aumentando o seu SCORE.\nO príncipe já ouviu falar de sua beleza e está querendo muito conhecê-la, mas cuidado, ele pode perder o interesse.'#73
+    '\nPara isso, ela deve realizar algumas tarefas, conquistando a simpatia da madrasta aumentando o seu SCORE.\nO príncipe já ouviu falar de sua beleza e está querendo muito conhecê-la, mas cuidado, ele pode perder o interesse.',#73
+    f'É hora de focar nas atividades da casa.\n',#74
 
 ]
 

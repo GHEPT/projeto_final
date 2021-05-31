@@ -217,15 +217,16 @@ if __name__ == '__main__':
     soletrar(21, 22)
     soletrar(22, 23)
 
-    opcao = input('Escolha uma opção [1 ou 2]: ')
+    opcao = input('Escolha uma opção: ')
     if opcao == '1':
         relogio.adicionar_tempo(240)
         personagem.mudar_stamina(-30)
         soletrar(23, 24)
         print(personagem)
         print(relogio)
+        soletrar(74, 75)
         while True:
-            if relogio.hours <= 21:
+            if relogio.hours <= 19:
                 print()
                 soletrar(24, 25)
                 opcao = input('Escolha uma opção [1 a 5]: ')
@@ -270,7 +271,7 @@ if __name__ == '__main__':
                     print(personagem)
                     print(relogio)
             else:
-                if relogio.hours == 21:
+                if relogio.hours > 19:
                     soletrar(31, 32)
                     break
                 else:
@@ -288,7 +289,7 @@ if __name__ == '__main__':
             if relogio.hours <= 19:
                 print()
                 soletrar(33, 34)
-                opcao = input('Escolha uma opção [1 a 6]: ')
+                opcao = input('Escolha uma opção: ')
                 if opcao == '1':
                     soletrar(34, 35)
                     relogio.adicionar_tempo(120)
@@ -354,11 +355,12 @@ if __name__ == '__main__':
     relogio.minutes = 0
     relogio.days = 3
     personagem.stamina = 0
+    print(personagem)
     print(relogio)
     soletrar(44, 47)
     while True:
         soletrar(47, 48)
-        opcao = input('Digite a opção [1 a 5]: ')
+        opcao = input('Digite a opção: ')
         if opcao == '1':
             if relogio.hours < 18:
                 relogio.adicionar_tempo(60)

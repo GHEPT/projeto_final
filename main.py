@@ -127,7 +127,7 @@ if __name__ == '__main__':
                 personagem.pontuar(-5)
                 relogio.adicionar_tempo(100)
                 print(personagem)
-                print(relogio)
+                #print(relogio)
         if opcao == '3':
             soletrar(20, 21)
         if opcao == '4':
@@ -135,7 +135,7 @@ if __name__ == '__main__':
         if opcao == '5':
             soletrar(20, 21)
     #novas partes do marcos
-    print(relogio)
+    #print(relogio)
     
     # while personagem.stamina > 15: 
     #     soletrar(60, 61)

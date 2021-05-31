@@ -2,7 +2,7 @@ class Personagem:
     def __init__(self, score=0, stamina=100):
         self.stamina = 100
         self.score = 0
-        self.nome = input('Digite o nome do personagem: ')
+        self.nome = input('Digite o nome da sua CINDERELA: ').upper()
         self.arrumada = False
         self.pecas = 0
 
@@ -18,7 +18,7 @@ class Personagem:
         self.stamina += pontos
 
     def __str__(self):
-        return f'\n{self.nome} tem {self.score} de pontuação e {self.stamina} de stamina.'
+        return f'\n| {self.nome} tem {self.score} de PONTUAÇÃO e {self.stamina} de STAMINA.'
 
         
 

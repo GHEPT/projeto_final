@@ -9,9 +9,9 @@ class Mochila:
     
     def abrir(self):
         if len(self.mochila) == 0:
-            print('Você enfia a mão no fundo da mochila mas não encontra nada. Sua mochila está vazia.')
+            print('{Ela enfia a mão no fundo da mochila mas não encontra nada. A mochila está vazia.')
         else:
-            print("Você tem os seguintes itens na mochila:")
+            print("Ela tem os seguintes itens na mochila:")
             for _item in self.mochila:
                 print(_item, end="   ")
                 print()
@@ -19,7 +19,7 @@ class Mochila:
     
     def adicionar(self, item):
         self.mochila.append(item)
-        print(f'Você adicionou {item} na mochila.')
+        print(f'Ela adicionou {item} na mochila.')
 
     
     def retirar(self, item):

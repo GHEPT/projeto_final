@@ -16,7 +16,7 @@ class Timer:
 
     
     def __str__(self):
-        return f'\nSão {self.hours:02d}:{self.minutes:02d} do {self.days}° dia.'
+        return f'| São {self.hours:02d}:{self.minutes:02d} do {self.days}° dia.\n'
 
 
 

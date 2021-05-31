@@ -17,15 +17,15 @@ relogio = Timer(8)
 def consumir(item_da_mochila): #LISTAR OS POSSÍVEIS ITENS DA MOCHILA AQUI.
     if item_da_mochila in mochila.mochila:
         mochila.retirar(item_da_mochila)
-        print(f'Você consumiu o item: {item_da_mochila}')
+        print(f'{personagem.nome} consumiu o item: {item_da_mochila}')
     if item_da_mochila == 'Papel':
-        print('Você escreveu uma carta para o Príncipe. Ele adorou. Você aumentou o interesse do príncipe em você.')
+        print(f'{personagem.nome} escreveu uma carta para o Príncipe. Ele adorou. Aumentou o interesse do príncipe em {personagem.nome}.')
         principe.amar(15)
     if item_da_mochila == 'Frasco Vermelho':
-        print('Você fez um bolo e enviou para o príncipe.\nParece que não era suco concentrado de mirtilo. O príncipe passou mal. Você perdeu reputação.')
+        print(f'{personagem.nome} fez um bolo e enviou para o príncipe.\nParece que não era suco concentrado de mirtilo. O príncipe passou mal. {personagem.nome} perdeu reputação.')
         principe.amar(-10)
     if item_da_mochila == 'Pêssego':
-        print(f'A poção mágica favorita da fada madrinha é a de Pêssego! Ela amou e fez pra você o vestido mais lindo do Reino')
+        print(f'A poção mágica favorita da fada madrinha é a de Pêssego! Ela amou e fez pra {personagem.nome} o vestido mais lindo do Reino')
     else:
         pass
 
@@ -36,7 +36,11 @@ def rng(): #Define um número aleatório entre 1 e 10. Sorte é variável global
 
 if __name__ == '__main__':
     print()
-    print('-=' * 50)
+    print('-=' * 70)
+    soletrar(72, 74)
+    print('-=' * 70)
+    print(personagem)
+    print(relogio)
     soletrar(0, 5)
     opcao = input('Digite sua escolha: ')
     if opcao == '1':
@@ -58,9 +62,9 @@ if __name__ == '__main__':
         soletrar(7, 9)
         personagem.mudar_stamina(-5)
         relogio.adicionar_tempo(60)
+        mochila.adicionar('Papel')
         print(personagem)
         print(relogio)
-        mochila.adicionar('Papel')
     if opcao == '3':
         som('varrendo')
         soletrar(9, 10)
@@ -162,39 +166,39 @@ if __name__ == '__main__':
             personagem.pecas += 1
             relogio.adicionar_tempo(50)
             personagem.pontuar(10)
-            print(relogio)
             print(personagem)
+            print(relogio)
         elif opcao =='2':
             soletrar(65, 66)#farda
             personagem.pecas += 1
             relogio.adicionar_tempo(70)
             personagem.pontuar(20)
-            print(relogio)
             print(personagem)
+            print(relogio)
         elif opcao == '3':
             soletrar(66, 67)#velhas
             relogio.adicionar_tempo(30)
             personagem.pontuar(-10)
-            print(relogio)
             print(personagem)
+            print(relogio)
         elif opcao == '4':
             soletrar(67, 68)#roubadas
             relogio.adicionar_tempo(40)
             personagem.pontuar(-10)
-            print(relogio)
             print(personagem)
+            print(relogio)
         elif opcao == '5':
             consumir('Papel')
             principe.amar(25)
             relogio.adicionar_tempo(60)
-            print(relogio)
             print(personagem)
+            print(relogio)
         elif opcao == '6':
             consumir('Frasco Vermelho')
             principe.amar(-10)
             relogio.adicionar_tempo(120)
-            print(relogio)
-            print(personagem)           
+            print(personagem)
+            print(relogio)           
         else:
             opcao == '7'
             personagem.dormir()
@@ -218,9 +222,8 @@ if __name__ == '__main__':
         relogio.adicionar_tempo(240)
         personagem.mudar_stamina(-30)
         soletrar(23, 24)
-        print(relogio)
         print(personagem)
-        soletrar(72, 73)
+        print(relogio)
         while True:
             if relogio.hours <= 21:
                 print()
@@ -260,12 +263,12 @@ if __name__ == '__main__':
                     soletrar(29, 30)
                     relogio.adicionar_tempo(30)
                     personagem.mudar_stamina(20) 
-                    print(relogio)
                     print(personagem)
+                    print(relogio)
                 elif opcao == '5':
                     soletrar(30, 31)
-                    print(relogio)
                     print(personagem)
+                    print(relogio)
             else:
                 if relogio.hours == 21:
                     soletrar(31, 32)
@@ -287,12 +290,14 @@ if __name__ == '__main__':
                     relogio.adicionar_tempo(120)
                     personagem.mudar_stamina(-30)
                     personagem.pontuar(35)
+                    print(personagem)
                     print(relogio)
                 elif opcao == '2':
                     soletrar(35, 36)
                     relogio.adicionar_tempo(30)
                     personagem.mudar_stamina(-20)
                     personagem.pontuar(20)
+                    print(personagem)
                     print(relogio)
                 elif opcao == '3':
                     rng()
@@ -301,23 +306,31 @@ if __name__ == '__main__':
                         relogio.adicionar_tempo(120)
                         personagem.mudar_stamina(-30)
                         personagem.pontuar(30)
+                        print(personagem)
                         print(relogio)
                     else: 
                         soletrar(37, 38)
                         relogio.adicionar_tempo(120)
                         personagem.mudar_stamina(-30)
                         personagem.pontuar(-30)
+                        print(personagem)
                         print(relogio)
                 elif opcao == '4':
                     soletrar(38, 39)
                     relogio.adicionar_tempo(30)
-                    personagem.mudar_stamina(20) 
+                    personagem.mudar_stamina(20)
+                    print(personagem)
+                    print(relogio)
                 elif opcao == '5':
                     soletrar(39, 40)
+                    print(personagem)
+                    print(relogio)
                 elif opcao == '6':
                     relogio.adicionar_tempo(240)
                     personagem.mudar_stamina(-30)
                     soletrar(40, 41)
+                    print(personagem)
+                    print(relogio)
                 elif opcao == '0':
                     break
             else:
@@ -328,6 +341,8 @@ if __name__ == '__main__':
                     print()
                     soletrar(42, 43)
                     personagem.pontuar(-40)
+                    print(personagem)
+                    print(relogio)
                     break
     # edu
     soletrar(43, 44)

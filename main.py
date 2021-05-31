@@ -205,7 +205,7 @@ if __name__ == '__main__':
             break
     
     
-    
+    personagem.dormir()
     # nubia
     relogio.hours = 12
     relogio.minutes = 0

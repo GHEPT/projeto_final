@@ -150,8 +150,8 @@ if __name__ == '__main__':
     #print(relogio)
     
 
-    soletrar(59, 61)
     while True:
+        soletrar(59, 61)
         if 'Papel' in mochila.mochila:
             soletrar(61, 62)
         if 'Frasco Vermelho' in mochila.mochila:

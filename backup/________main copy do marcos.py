@@ -35,6 +35,8 @@ def rng(): #Define um número aleatório entre 1 e 10. Sorte é variável global
     sorte = randint(1,10)
 
 
+
+
 if __name__ == '__main__':
     print()
     print('-=' * 50)
@@ -149,17 +151,17 @@ if __name__ == '__main__':
         if opcao == '1':
                 if relogio.hours <= 18:
                     relogio.adicionar_tempo(10)
-                    print('Ainda não está na hora do Baile')
+                    soletrar(36, 37)
                 else:
                     if personagem.stamina <= 40:
                         print(f'{personagem.nome} não tem energia suficiente para sair.')
                         relogio.adicionar_tempo(10)
                     else:
                         if 'Vestido' in mochila.mochila:
-                            personagem.pontuar(50)
-                            print(f'O vestido mais bonito da festa é o de {personagem.nome}. O interesse do príncipe por ela agora é de {principe.amor}. Eles se casaram e foram FELIZES PARA SEMPRE!')
+                            principe.amar(50)
+                            print(f'O vestido mais bonito da festa é o de {personagem.nome}. O interesse do príncipe por ela agora é de {principe.amar}. Eles se casaram e foram FELIZES PARA SEMPRE!')
                         else:
-                            personagem.pontuar(-50)
+                            principe.amar(-50)
                             print(f'{personagem.nome} foi para o baile sem vestido de gala. O príncipe não quis dançar com {personagem.nome}. FIM DE JOGO.')
         elif opcao == '2':
             if 'Pêssego' in mochila.mochila:

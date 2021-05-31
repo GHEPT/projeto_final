@@ -17,7 +17,7 @@ class Personagem:
         self.stamina += pontos
 
     def __str__(self):
-        return f'{self.nome} tem {self.score} de pontuação e {self.stamina} de stamina.'
+        return f'\n{self.nome} tem {self.score} de pontuação e {self.stamina} de stamina.'
 
         
 

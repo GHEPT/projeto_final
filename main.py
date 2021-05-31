@@ -43,14 +43,14 @@ if __name__ == '__main__':
         if sorte < 5:
             print(falas[5])
             personagem.mudar_stamina(-25)
-            relogio.adicionar_tempo(60)
+            relogio.adicionar_tempo(120)
             print(personagem)
             print(relogio)
         else:
             print(falas[6])
             personagem.mudar_stamina(-25)
             principe.amar(3)
-            relogio.adicionar_tempo(40)
+            relogio.adicionar_tempo(60)
             print(personagem)
             print(relogio)
     if opcao == '2':
@@ -127,7 +127,7 @@ if __name__ == '__main__':
                 personagem.pontuar(-5)
                 relogio.adicionar_tempo(100)
                 print(personagem)
-                #print(relogio)
+                print(relogio)
         if opcao == '3':
             soletrar(20, 21)
         if opcao == '4':
@@ -137,54 +137,60 @@ if __name__ == '__main__':
     #novas partes do marcos
     #print(relogio)
     
-    # while personagem.stamina > 15: 
-    #     soletrar(60, 61)
-    #     if 'papel' in mochila.mochila:
-    #         soletrar(61, 62)
-    #     if 'Frasco Vermelho' in mochila.mochila:
-    #         soletrar(62, 63)        
-    #     if personagem.stamina < 40:
-    #         soletrar(63, 64)   
-    #     while opcao != 8:
-    #         if opcao == '1':
-    #             mochila.adicionar('Água')
-    #             personagem.pontuar(30)
-    #             personagem.mudar_stamina(-10)
-    #             relogio.adicionar_tempo(30)
-    #             print(relogio)
-    #             print(personagem)
-    #         if opcao =='4':
-    #             if 'Água' not in mochila.mochila:
-    #                 soletrar(65, 66)
-    #                 relogio.adicionar_tempo(30)
-    #                 print(relogio)
-    #                 print(personagem)
-    #         else: 
-    #             soletrar(66, 67)
-    #             personagem.pontuar(30)
-    #             print(relogio)
-    #             print(personagem)
-    #         if opcao == '5':
-    #             if 'Água' not in mochila.mochila:
-    #                 soletrar(65, 66)
-    #                 relogio.adicionar_tempo(30)
-    #                 print(relogio)
-    #                 print(personagem)
-    #             else:
-    #                 soletrar(67, 68)
-    #                 personagem.pontuar(30)
-    #                 print(relogio)
-    #                 print(personagem)
-    #         if opcao == '6':
-    #             consumir('Papel')
-    #             principe.amar(25)
-    #             relogio.adicionar_tempo(60)
-    #             print(relogio)
-    #         if opcao == '7':
-    #             consumir('Frasco Vermelho')
-    #             principe.amar(-10)
-    #             relogio.adicionar_tempo(120)
-    #             print(relogio)
+    while personagem.stamina > 15: 
+        soletrar(60, 61)
+        if 'papel' in mochila.mochila:
+            soletrar(61, 62)
+        if 'Frasco Vermelho' in mochila.mochila:
+            soletrar(62, 63)        
+        if personagem.stamina < 40:
+            soletrar(63, 64)   
+        while opcao != 8:
+            if opcao == '1':
+                mochila.adicionar('Água')
+                personagem.pontuar(30)
+                personagem.mudar_stamina(-10)
+                relogio.adicionar_tempo(30)
+                print(relogio)
+                print(personagem)
+            elif opcao =='4':
+                if 'Água' not in mochila.mochila:
+                    soletrar(65, 66)
+                    relogio.adicionar_tempo(30)
+                    print(relogio)
+                    print(personagem)
+                else: 
+                    soletrar(66, 67)
+                    personagem.pontuar(30)
+                    print(relogio)
+                    print(personagem)
+            elif opcao == '5':
+                if 'Água' not in mochila.mochila:
+                    soletrar(65, 66)
+                    relogio.adicionar_tempo(30)
+                    print(relogio)
+                    print(personagem)
+                else:
+                    soletrar(67, 68)
+                    personagem.pontuar(30)
+                    print(relogio)
+                    print(personagem)
+            elif opcao == '6':
+                consumir('Papel')
+                principe.amar(25)
+                relogio.adicionar_tempo(60)
+                print(relogio)
+            elif opcao == '7':
+                consumir('Frasco Vermelho')
+                principe.amar(-10)
+                relogio.adicionar_tempo(120)
+                print(relogio)
+            elif opcao == '2':
+                print('Varreu')
+            elif opcao == '3':
+                print('Varreu')      
+            else:
+                opcao == '8'          
     
     
     

@@ -16,7 +16,7 @@ falas = [
     f'Sua Madrasta procura furiosa por você, mas se surpreende ao encontrá-la já trabalhando. Você pontuou.',#9
     f'Sua Madrasta parece extremamente satisfeita. Ela tira um Frasco Vermelho do vestido e te dá. \'Beba, minha filha. Esse suco é maravilhoso, você vai gostar.\'',#10
     f'Você adicionou Frasco Vermelho à mochila.',#11
-    f'A rotina de {personagem.nome} é cansativa. Gerencie com cuidado seus afazeres. Você pode executar até 3 ações.',#12
+    f'{personagem.nome} continua inicia sua rotina. Entre os trabalhos, ela precisa arrumar tempo para juntar os itens para fazer o vestido. Gerencie com cuidado seus afazeres. Você pode executar até 3 ações.',#12
     f'OPÇÕES:\n[ 1 ] Cuidar dos animais.\n[ 2 ] Tirar um cochilo.\n[ 3 ] Pegar água no poço.\n[ 4 ] Ajudar as primas a se arrumarem para o encontro com o príncipe.\n[ 5 ] Dar faxina.',#13
     f'*EVENTO DE SORTE* Você cuidou rapidamente de todos os bichos. Sua pontuação aumentou drasticamente.',#14
     f'Levou 3 horas para cuidar dos animais. Score aumentou.',#15

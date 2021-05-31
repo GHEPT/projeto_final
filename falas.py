@@ -93,7 +93,7 @@ falas = [
     f'Quem não arrisca não petisca. Você encontrou um pedaço de renda para enfeitar seu vestido.',#64
     f'Você encontra fardas velhas de seu falecido pai e as reaproveita como tecido.',#65
     f'Suas enteadas não aceitam doar roupas para você. E você não tem peças sobressalentes.',#66
-    f'Você vai até o varal do vizinho, mas ele percebe suas intenções e corre atrás de você com um chinelo.', #67
+    f'{personagem.nome} vai até o varal da vizinha, mas ela percebe suas intenções e corre atrás de você com um chinelo.', #67
     f'\nÉ hora de focar nas atividades da casa. Não esqueça de trabalhar no seu vestido.',#68
     f'Suas enteadas não precisam mais de ajuda. Pare de de perder tempo.', #69
     f'Opção Incorreta. Pare de perder tempo.',#70

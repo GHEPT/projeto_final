@@ -36,7 +36,7 @@ falas = [
     [ 2 ] Conhecendo a madrasta que tem e com o desejo de ganhar a sua simpatia, corre para fazer o que pediu e deixa o vestido para depois.
 ''',#22
     f'Oh, que maravilha! Com a ajuda dos pequenos animais que tem como amigos os retoques finais ficaram ótimos. Ainda não é o ideal para um baile, mas é um ótimo começo. \nEntretanto, {personagem.nome} se distraiu tanto que não viu a hora passar, agora tem menos tempo para fazer tudo!',#23
-    f'''É hora de focar nas atividades da casa. O que gostaria de fazer?
+    f'''O que gostaria de fazer?
     [ 1 ] Varrer a casa e limpar os móveis
     [ 2 ] Lavar as louças
     [ 3 ] Preparar as refeições para servir os convidados
@@ -98,7 +98,7 @@ falas = [
     f'Suas enteadas não precisam mais de ajuda. Pare de de perder tempo.', #69
     f'Opção Incorreta. Pare de perder tempo.',#70
     f'Você encontrou todas as peças as tempo.\nVestido Rudimentar foi adicionado à mochila.',#71
-
+    f'É hora de focar nas atividades da casa.', #72
 ]
 
 

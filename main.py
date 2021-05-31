@@ -220,6 +220,7 @@ if __name__ == '__main__':
         soletrar(23, 24)
         print(relogio)
         print(personagem)
+        soletrar(72, 73)
         while True:
             if relogio.hours <= 21:
                 print()

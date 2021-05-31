@@ -89,8 +89,8 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
     f'Quem não arrisca não petisca. {personagem.nome} encontrou um pedaço de renda para enfeitar seu vestido.',#64
     f'{personagem.nome} encontra fardas velhas de seu falecido pai e as reaproveita como tecido.',#65
     f'As enteadas de {personagem.nome} não aceitam doar roupas e ela não tem peças sobressalentes.',#66
-    f'{personagem.nome} vai até o varal da vizinha, mas ele percebe suas intenções e corre atrás dela com um chinelo.', #67
-    f'\nÉ hora de focar nas atividades da casa. {personagem.nome} não ppode esquecer de trabalhar em seu vestido.',#68
+    f'{personagem.nome} vai até o varal da vizinha, mas ela percebe suas intenções e corre atrás dela com um chinelo.', #67
+    f'Agradar a Madrasta te rendeu pontos.\nÉ hora de focar nas atividades da casa. {personagem.nome} não pode esquecer de trabalhar em seu vestido.',#68
     f'As enteadas não precisam mais de ajuda. Pare de perder tempo!!', #69
     f'Opção Incorreta. Pare de perder tempo...',#70
     f'SHOW! {personagem.nome} encontrou todas as peças a tempo.\nUm Vestido Rudimentar foi adicionado à mochila.\nEste é o FIM DO PRIMEIRO DIA!\n',#71

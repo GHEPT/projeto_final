@@ -279,6 +279,10 @@ if __name__ == '__main__':
                     personagem.pontuar(-40)
                     break
     if opcao == '2':
+        personagem.pontuar(30)
+        personagem.mudar_stamina(-15)
+        print(personagem)
+        print(relogio)
         soletrar(68, 69)
         while True:
             if relogio.hours <= 19:

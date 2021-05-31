@@ -351,11 +351,11 @@ if __name__ == '__main__':
                     soletrar(50, 51)
                     print(personagem)
                     print(relogio)
+                    break
                 else:
                     personagem.pontuar(-50)
                     soletrar(51, 52)
-                    sys.exit(1)
-                    break
+                    sys.exit(0)
         elif opcao == '2':
             if 'Pêssego' in mochila.mochila:
                 soletrar(52, 53)
@@ -403,4 +403,21 @@ if __name__ == '__main__':
                 relogio.adicionar_tempo(120)
                 print(personagem)
                 print(relogio)
-                
+
+    #Nova parte final
+    if personagem.score > 0:
+        print(f'Seu score foi {personagem.score}. O príncipe admira sua jornada. Metade dos seus pontos foram convertidos em amor.')
+        principe.amor += personagem.score // 2
+
+        print(f'Agora o interesse do príncipe é: {principe.amor}')
+        print(f'{personagem.nome} participou do baile com o príncipe! E antes que o encanto se desfizesse, {personagem.nome} entrou na carruagem pronta para partir.')
+        som('badalada')
+        print(f'O príncipe entrou na carruagem com {personagem.nome} e foram felizes para sempre!')
+        som('badalada')
+    else:
+        print(f'Sua pontuação não foi suficiente para avançar! Tente novamente!')
+
+
+
+
+

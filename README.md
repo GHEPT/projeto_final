@@ -3,7 +3,7 @@
 ### 👰 IF Cinderella
 
 **Realização:**
-- [Eduador Teodoro](https://github.com/GHEPT)
+- [Eduardo Teodoro](https://github.com/GHEPT)
 - [Marcos Trannin](https://github.com/marcosATr)
 - [Núbia Segóvia](https://github.com/segovianubia)
 

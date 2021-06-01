@@ -68,7 +68,7 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
     f'Todos da casa foram e {personagem.nome} ficou sozinha.',#44
     f'Triste, {personagem.nome} chorou muito e sua STAMINA é 0.',#45
     f'{personagem.nome} precisa sair dessa fazendo o que gosta para ter STAMINA suficiente para ir ao Baile.',#46
-    f'{personagem.nome} só poderá ir para o baile após às 18:00.\nOPÇÕES:\n[ 1 ] Ir para o Baile\n[ 2 ] Fazer uma poção mágica\n[ 3 ] Pegar frutos no pomar\n[ 4 ] Comer\n[ 5 ] Se arrumar',#47
+    f'{personagem.nome} só poderá ir para o baile após às 18:00.\n\nOPÇÕES:\n[ 1 ] Ir para o Baile\n[ 2 ] Fazer uma poção mágica\n[ 3 ] Pegar frutos no pomar\n[ 4 ] Comer\n[ 5 ] Se arrumar',#47
     f'Ainda não está na hora do Baile',#48
     f'{personagem.nome} não tem energia suficiente para sair.',#49
     f'O vestido mais bonito da festa é o de {personagem.nome}. O amor do príncipe aumentou.',#50
@@ -84,7 +84,7 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
     f'{personagem.nome} terminou todos os afazeres. Agora resta procurar por materiais que sirvam para fazer um vestido! Encontre um tecido útil e uma renda adequada.',#59
     f'\nOPÇÕES:\n[ 1 ] Se arriscar e verificar o armário da Madrasta.\n[ 2 ] Verificar no porão.\n[ 3 ] Desmanchar roupas velhas.\n[ 4 ] Roubar do varal da vizinha.', #60
     f'[ 5 ] Usar o papel na mochila e escrever Carta para o príncipe',#61
-    f'[ 6 ] Frasco Vermelho e fazer um bolo de mirtilo.',#62
+    f'[ 6 ] Usar o Frasco Vermelho e fazer um bolo de mirtilo.',#62
     f'[ 7 ] Dormir.',#63
     f'Quem não arrisca não petisca. {personagem.nome} encontrou um pedaço de renda para enfeitar seu vestido.',#64
     f'{personagem.nome} encontra fardas velhas de seu falecido pai e as reaproveita como tecido.',#65

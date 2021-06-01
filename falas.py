@@ -103,12 +103,12 @@ O número de tarefas aumentam. É necessário arrumar e limpar a casa para a fes
 
 def soletrar(inicio, fim):
     for j in range(inicio, fim):
-        # for letra in falas[j]:
-        #     print(letra, end='', flush=True)
-        #     time.sleep(0.05)
-        # print()                
-        # time.sleep(0.5)
-        print(falas[j])
+        for letra in falas[j]:
+            print(letra, end='', flush=True)
+            time.sleep(0.02)
+        print()                
+        time.sleep(0.2)
+            #print(falas[j])
 
 
 

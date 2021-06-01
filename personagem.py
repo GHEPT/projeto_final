@@ -12,7 +12,6 @@ class Personagem:
         
     def pontuar(self, pontos):
         self.score += pontos
-        #print(f'Você pontuou. Seu SCORE agora é: {self.score}') #Verificador
 
     def mudar_stamina(self, pontos):
         self.stamina += pontos

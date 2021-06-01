@@ -108,7 +108,6 @@ def soletrar(inicio, fim):
             time.sleep(0.02)
         print()                
         time.sleep(0.2)
-            #print(falas[j])
 
 
 

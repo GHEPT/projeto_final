@@ -1,19 +1,14 @@
 from random import randint
 from mochila import Mochila
-#from personagem import Personagem
 from som import som
 from timer import Timer
 import sys
-#from creditos import creditos
 from time import sleep
 from falas import *
-
 sonhos = 0
 enteada = 0
 mochila = Mochila()
 relogio = Timer(8)
-#personagem = Personagem()
-
 def consumir(item_da_mochila): #LISTAR OS POSSÍVEIS ITENS DA MOCHILA AQUI.
     if item_da_mochila in mochila.mochila:
         mochila.retirar(item_da_mochila)
@@ -28,6 +23,7 @@ def consumir(item_da_mochila): #LISTAR OS POSSÍVEIS ITENS DA MOCHILA AQUI.
         print(f'A poção mágica favorita da fada madrinha é a de Pêssego! Ela amou e fez pra {personagem.nome} o vestido mais lindo do Reino')
     else:
         pass
+
 
 def rng(): #Define um número aleatório entre 1 e 10. Sorte é variável global para uso em condições.
     global sorte

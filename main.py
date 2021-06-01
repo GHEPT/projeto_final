@@ -40,6 +40,7 @@ if __name__ == '__main__':
     soletrar(0, 5)
     opcao = input('Digite sua escolha: ')
     if opcao == '1':
+        som('carruagem_cidade')
         rng()
         if sorte < 5:
             print(falas[5])
@@ -107,6 +108,7 @@ if __name__ == '__main__':
                 print(personagem)
                 print(relogio)
         elif opcao == '2':
+            som('dormindo')
             sonhos += 1
             if sonhos == 3:
                 soletrar(19, 20)

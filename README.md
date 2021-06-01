@@ -27,11 +27,11 @@
 
 ![alt text](https://i.imgur.com/nqK1s0f.png)
 
-**Fácil gerenciamento do conteúdo, adaptável à outros contextos.**
+**Fácil gerenciamento do conteúdo, adaptável a outros contextos.**
 
 ![alt text](https://i.imgur.com/K2UlxhM.png)
 
-**Programação orientada à objetos:**
+**Programação orientada a objetos:**
 
 ![alt text](https://i.imgur.com/S87lezH.png)
 

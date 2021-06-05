@@ -1,9 +1,11 @@
+from cores import Cores
+cores = Cores()
+
 class Timer:
     def __init__(self, start):
         self.hours = start #Em horas absolutas
         self.minutes = 0
         self.days = 1
-
 
     def adicionar_tempo(self, time_passed):
         self.minutes += time_passed #SEMPRE EM MINUTOS! MUITO IMPORTANTE.
@@ -13,10 +15,9 @@ class Timer:
             while self.hours >= 24:
                 self.days += 1
                 self.hours -= 24
-
     
     def __str__(self):
-        return f'| São {self.hours:02d}:{self.minutes:02d} do {self.days}° dia.\n'
+        return f'AGORA SÃO {cores.redON}{self.hours:02d}:{self.minutes:02d}{cores.redOFF} DO {cores.redON}{self.days}°{cores.redOFF} DIA\n'
 
 
 
